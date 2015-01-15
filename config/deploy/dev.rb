@@ -6,11 +6,11 @@ set :deploy_to, "/mnt/sharefs/#{application}-#{stage}" #FIXME
 set :branch, "master" #FIXME
 
 # The hostnames to deploy to.
-role :web, "grocery.com" #FIXME
+role :web, "grocery" #FIXME
 
 # Specify one of the web servers to use for database backups or updates.
 # This server should also be running Wordpress.
-role :db, "grocery.com", :primary => true #FIXME
+role :db, "grocery", :primary => true #FIXME
 
 # The path to wp-cli
 #set :wp, "cd #{current_path}/#{app_root} ; /usr/bin/wp" #FIXME (Should be the full path to the wp command on your server)

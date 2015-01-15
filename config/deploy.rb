@@ -15,7 +15,7 @@ set(:db_pass) { random_password }
 
 # The subdirectory within the repo containing the DocumentRoot.
 set :app_root, "wordpress"
-set :local_path, "C:\Code\grocery" #FIXME
+set :local_path, "/mnt/sharefs/grocery" #FIXME
 
 # Use a remote cache to speed things up
 set :deploy_via, :remote_cache
@@ -36,4 +36,4 @@ set :httpd_group, 'www-data'
 
 
 #set this to where you have installed your wp site locally (http://[local_domain]/wp-admin/ should exist. )
-set :local_domain, 'grocery.com' #FIXME
+set :local_domain, 'grocery' #FIXME
